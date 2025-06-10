@@ -1,0 +1,110 @@
+/*********************
+ *
+ * SEACHING
+ *
+ ********************/
+.product-search-bloc {
+	position: absolute;
+	top: 35px;
+	left: 120px;
+	height: 20px;
+}
+.product-search-bloc:after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 1px;
+	background-color: @lightgrey;
+	position: absolute;
+	left: 25px;
+	bottom: 5px;
+
+	-webkit-transition: width 0.3s ease-out;
+	transition: width 0.3s ease-out;
+
+}
+.product-search-bloc.empty:after {
+ 	width: 155px;
+}
+.product-search-bloc.focus:after {
+	width: 0;
+}
+
+.product-search-label {
+	display: block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+.product-search-label .icon-search {
+	display: none;
+	width: 15px;
+	height: 15px;
+	fill: @black;
+	position: absolute;
+	top: 3px;
+	left: 0;
+}
+.empty .product-search-label .icon-search {
+	display: block;
+}
+.product-search-label .icon-close {
+	width: 50px;
+	height: 50px;
+	fill: @black;
+	position: absolute;
+	top: -15px;
+	left: -18px;
+	display: block;
+}
+.empty .product-search-label .icon-close {
+	display: none;
+}
+#product-search-input {
+	display: block;
+	width: 155px;
+	height: 20px;
+	line-height: 20px;
+	margin-left: 25px;
+	background-color: transparent;
+	border: none;
+
+	color: #58585a;
+	font-family: @font1;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+
+@media only screen and (max-width: 1740px) {
+	.product-search-bloc {
+		left: 60px;
+	}
+}
+
+/*********************
+ *
+ * TABLETTE AND LESS
+ *
+ ********************/
+@media only screen and (max-width: 1024px) {
+	.product-search-bloc {
+		left: 60px;
+		top: 100px;
+	}
+}
+
+/*********************
+ *
+ * LANDSCAPE PHONE
+ *
+ ********************/
+@media only screen and (max-width: 690px) {
+	.product-search-bloc {
+		left: 30px;
+		top: 0;
+	}
+}

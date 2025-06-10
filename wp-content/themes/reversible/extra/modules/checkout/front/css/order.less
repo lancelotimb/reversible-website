@@ -1,0 +1,209 @@
+/*********************
+ *
+ *
+ * PRODUCT TABLE / ORDER
+ *
+ *
+ ********************/
+.extra-order-table {
+	margin: 52px 0 59px;
+	padding-bottom: 42px;
+	border-bottom: 1px solid @lightgrey;
+}
+.order-item td {
+	width: 33%;
+}
+
+/*********************
+ *
+ *
+ * TOTAL
+ *
+ *
+ ********************/
+.extra-order-total {
+	margin-bottom: 60px;
+}
+
+.extra-table-total-separator {
+	height: 1px;
+	margin: 32px 0;
+	background-color: @lightgrey;
+}
+//.total-line-value {
+//	float: right;
+//}
+
+/*********************
+ *
+ *
+ * INSTRUCTIONS
+ *
+ *
+ ********************/
+.order-instructions {
+	padding: 49px 9px 0;
+	font-size: 18px;
+	float: left;
+	width: 360px;
+	margin-bottom: 60px;
+}
+.order-instructions-separator {
+	clear: both;
+	height: 1px;
+	margin: 60px 0;
+	background-color: @lightgrey;
+}
+
+.order-instructions .big-shop-button {
+	font-family: @font1;
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: 400;
+	padding: 9px 10px 6px;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	text-transform: none;
+	height: auto;
+	width: 170px;
+
+	position: relative;
+	display: block;
+}
+.order-instructions.bank-decline .big-shop-button {
+	width: 170px;
+	display: block;
+	float: left;
+}
+.order-instructions.bank-decline .big-shop-button.pay {
+	margin-right: 10px;
+}
+
+
+
+/*********************
+ *
+ *
+ * ADDRESS
+ *
+ *
+ ********************/
+.address-bloc {
+	width: 360px;
+	border: 1px solid @lightgrey;
+	padding: 48px 58px 40px;
+	font-size: 18px;
+}
+.address-blocs {
+	float: left;
+	width: 360px;
+}
+.address-bloc-billing {
+	margin-bottom: 30px;
+}
+.address-bloc .address-bloc-title {
+	margin: 0;
+	font-size: 18px;
+	font-weight: 700;
+}
+.address-bloc address {
+	font-style: normal;
+}
+
+/*********************
+ *
+ *
+ * ADDRESS WITH INSTRUCTIONS
+ *
+ *
+ ********************/
+.order-instructions-wrapper ~ .address-blocs {
+	width: 100%;
+	float: none;
+}
+.order-instructions-wrapper ~ .address-blocs .address-bloc {
+	float: left;
+}
+.order-instructions-wrapper ~ .address-blocs .address-bloc-billing {
+	margin-right: 60px;
+	margin-bottom: 0;
+}
+
+
+/*********************
+ *
+ *
+ * STATUS
+ *
+ *
+ ********************/
+
+.extra-order-status {
+	float: left;
+	margin-bottom: 30px;
+	margin-right: 30px;
+}
+.invoice-wrapper {
+	float: right;
+}
+.invoice-wrapper .big-shop-button {
+	margin-top: 0;
+}
+
+
+/*********************
+ *
+ * EASY CLEARING
+ *
+ ********************/
+.extra-order-status-wrapper:after,
+.total-line:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+
+
+@media only screen and (max-width: 1180px) {
+	.order-instructions-wrapper ~ .address-blocs .address-bloc-billing {
+		margin-right: 10px;
+	}
+}
+
+@media only screen and (max-width: 780px) {
+	.order-instructions {
+		float: none;
+		margin: 0 auto 60px;
+		padding-top: 0;
+		max-width: 100%;
+	}
+
+	.address-blocs,
+	.order-instructions-wrapper ~ .address-blocs {
+		width: 100%;
+	}
+
+	.address-blocs .address-bloc,
+	.order-instructions-wrapper ~ .address-blocs .address-bloc {
+		max-width: 100%;
+	}
+
+	.order-instructions-wrapper ~ .address-blocs .address-bloc {
+		float: none;
+		margin: 0 auto;
+	}
+	.order-instructions-wrapper ~ .address-blocs .address-bloc-billing {
+		margin-bottom: 30px;
+	}
+
+	.order-instructions.bank-decline .big-shop-button.pay,
+	.order-instructions.bank-decline .big-shop-button.account,
+	.order-instructions.bank-decline .big-shop-button {
+		float: none;
+		margin: 0 auto 10px;
+	}
+}

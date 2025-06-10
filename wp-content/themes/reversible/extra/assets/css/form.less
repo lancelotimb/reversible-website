@@ -1,0 +1,329 @@
+label {
+	font-size: 16px;
+	line-height: 25px;
+	color: @black;
+	display: block;
+	cursor: pointer;
+}
+label.inline {
+	display: inline;
+}
+
+.main-wrapper input[type="tel"],
+.wpcf7-form input[type="tel"],
+.main-wrapper input[type="search"],
+.wpcf7-form input[type="search"],
+.main-wrapper input[type="email"],
+.wpcf7-form input[type="email"],
+.main-wrapper input[type="text"],
+.wpcf7-form input[type="text"],
+.main-wrapper input[type="password"],
+.wpcf7-form input[type="password"],
+.main-wrapper input[type="url"],
+.wpcf7-form input[type="url"],
+.main-wrapper textarea,
+.wpcf7-form textarea {
+	width: 360px;
+	padding: 8px 12px 5px;
+	color: @highlight2;
+	height: 40px;
+
+	max-width: 100%;
+	background-color: @white;
+	border: 1px solid @lightgrey;
+}
+.main-wrapper textarea,
+.wpcf7-form textarea {
+	height: 230px;
+}
+.main-wrapper input[type="tel"]:focus,
+.wpcf7-form input[type="tel"]:focus,
+.main-wrapper input[type="search"]:focus,
+.wpcf7-form input[type="search"]:focus,
+.main-wrapper input[type="email"]:focus,
+.wpcf7-form input[type="email"]:focus,
+.main-wrapper input[type="text"]:focus,
+.wpcf7-form input[type="text"]:focus,
+.main-wrapper input[type="password"]:focus,
+.wpcf7-form input[type="password"]:focus,
+.main-wrapper input[type="url"]:focus,
+.wpcf7-form input[type="url"]:focus,
+.main-wrapper textarea:focus,
+.wpcf7-form textarea:focus {
+	border: 1px solid @black;
+}
+
+.required {
+	font-family: sans-serif;
+}
+
+fieldset {
+	min-width: 0;
+}
+
+
+.main-wrapper input[type="submit"].big-shop-button,
+.wpcf7-form input[type="submit"].big-shop-button,
+.main-wrapper button.big-shop-button,
+.wpcf7-form button.big-shop-button,
+.main-wrapper .button.big-shop-button,
+.wpcf7-form .button.big-shop-button,
+.main-wrapper input[type="submit"],
+.wpcf7-form input[type="submit"],
+.main-wrapper button,
+.wpcf7-form button {
+	cursor: pointer;
+	font-family: @font1;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 400;
+	padding: 9px 20px 6px;
+	text-decoration: none;
+	white-space: nowrap;
+	text-transform: none;
+	height: auto;
+	width: auto;
+}
+.main-wrapper input[type="submit"],
+.wpcf7-form input[type="submit"] {
+	background: transparent;
+	border: 1px solid rgba(red(@black), green(@black), blue(@black), 0.2);
+}
+.main-wrapper input[type="submit"]:hover,
+.wpcf7-form input[type="submit"]:hover,
+.main-wrapper input[type="submit"]:focus,
+.wpcf7-form input[type="submit"]:focus,
+.main-wrapper input[type="submit"]:active,
+.wpcf7-form input[type="submit"]:active {
+	border-color: @dark;
+}
+.main-wrapper form input.extra-button,
+.wpcf7-form form input.extra-button,
+.main-wrapper form button.extra-button,
+.wpcf7-form form button.extra-button {
+	background-color: @highlight;
+	border: none;
+	margin-left: 0;
+}
+.main-wrapper form input.extra-button:before,
+.wpcf7-form form input.extra-button:before,
+.main-wrapper form button.extra-button:before,
+.wpcf7-form form button.extra-button:before {
+	background-color: @black;
+}
+.no-touch .main-wrapper form input.extra-button:hover,
+.no-touch .wpcf7-form form input.extra-button:hover,
+.touch .main-wrapper form input.extra-button:active,
+.touch .wpcf7-form form input.extra-button:active,
+.no-touch .main-wrapper form button.extra-button:hover,
+.no-touch .wpcf7-form form button.extra-button:hover,
+.touch .main-wrapper form button.extra-button:active,
+.touch .wpcf7-form form button.extra-button:active {
+	color: @white;
+}
+
+.main-wrapper form input.extra-button.disabled,
+.wpcf7-form form input.extra-button.disabled,
+.main-wrapper form input.extra-button:disabled,
+.wpcf7-form form input.extra-button:disabled,
+.main-wrapper form button.extra-button.disabled,
+.wpcf7-form form button.extra-button.disabled,
+.main-wrapper form button.extra-button:disabled,
+.wpcf7-form form button.extra-button:disabled {
+	color: @black;
+	background-color: @lightgrey;
+	cursor: default;
+}
+
+.no-touch .main-wrapper form input.extra-button.disabled:hover,
+.no-touch .wpcf7-form form input.extra-button.disabled:hover,
+.touch .main-wrapper form input.extra-button.disabled:active,
+.touch .wpcf7-form form input.extra-button.disabled:active,
+.no-touch .main-wrapper form button.extra-button.disabled:hover,
+.no-touch .wpcf7-form form button.extra-button.disabled:hover,
+.touch .main-wrapper form button.extra-button.disabled:active,
+.touch .wpcf7-form form button.extra-button.disabled:active,
+.no-touch .main-wrapper form input.extra-button:disabled:hover,
+.no-touch .wpcf7-form form input.extra-button:disabled:hover,
+.touch .main-wrapper form input.extra-button:disabled:active,
+.touch .wpcf7-form form input.extra-button:disabled:active,
+.no-touch .main-wrapper form button.extra-button:disabled:hover,
+.no-touch .wpcf7-form form button.extra-button:disabled:hover,
+.touch .main-wrapper form button.extra-button:disabled:active,
+.touch .wpcf7-form form button.extra-button:disabled:active {
+	color: @black;
+}
+.no-touch .extra-button:hover.disabled:before,
+.touch .extra-button.disabled:active:before,
+.no-touch .extra-button:hover:disabled:before,
+.touch .extra-button:disabled:active:before {
+	display: none;
+}
+
+/*********************
+ *
+ * RADIO
+ *
+ ********************/
+.extra-radio > input[type="radio"],
+.extra-checkbox > input[type="checkbox"] {
+	cursor: pointer;
+	opacity: 0;
+	width: 30px;
+	height: 30px;
+	margin-right: 3px;
+}
+.extra-radio,
+.extra-checkbox {
+	background: transparent url('@{themeurl}/extra/assets/img/form-sprite.png') 0 0 no-repeat;
+	display:inline-block;
+	vertical-align: bottom;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	position: relative;
+	margin-right: -6px;
+}
+.extra-checkbox.focus {
+	background-position: 0 -30px;
+}
+.extra-radio {
+	background-position: 0 -120px;
+}
+.extra-radio.focus {
+	background-position: 0 -150px;
+}
+.checked {
+	background-position: 0 -60px;
+}
+.checked.focus {
+	background-position: 0 -90px;
+}
+.selected {
+	background-position: 0 -180px;
+}
+.selected.focus {
+	background-position: 0 -210px;
+}
+
+.extra-radio ~ label,
+.extra-checkbox ~ label {
+	line-height: 30px;
+}
+
+/*********************
+ *
+ *
+ * WPCF7
+ *
+ *
+ ********************/
+.wpcf7-form label {
+	margin-top: 15px;
+}
+
+.wpcf7-form input.wpcf7-captchar {
+	width: 100px;
+	display: block;
+	float: left;
+	margin-left: 10px;
+}
+.wpcf7-form img.wpcf7-captchac {
+	margin-top: 7px;
+	display: block;
+	float: left;
+}
+.wpcf7-form button.wpcf7-submit {
+	display: block;
+	float: left;
+	margin: -1px 0 0 10px;
+	height: 41px;
+}
+
+.wpcf7-form:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.wpcf7-form .ajax-loader {
+	position: relative;
+	top: 8px;
+	left: 15px;
+}
+
+
+/*********************
+ *
+ *
+ * VALIDATION
+ *
+ *
+ ********************/
+.woocommerce-invalid .input-text,
+.main-wrapper .woocommerce-invalid .input-text {
+	border-color: #000;
+}
+.extra-invalid-password,
+.extra-invalid-required,
+.extra-invalid-email,
+.extra-invalid-postcode,
+.extra-invalid-phone {
+	display: none;
+	font-weight: 700;
+	color: #000;
+}
+
+.woocommerce-invalid-required-field .extra-invalid-required {
+	display: block;
+}
+.woocommerce-invalid-email .extra-invalid-email {
+	display: block;
+}
+.woocommerce-invalid-postcode .extra-invalid-postcode {
+	display: block;
+}
+.woocommerce-invalid-phone .extra-invalid-phone {
+	display: block;
+}
+.woocommerce-invalid-password .extra-invalid-password {
+	display: block;
+}
+
+.woocommerce-invalid-email .extra-invalid-required,
+.woocommerce-invalid-postcode .extra-invalid-required,
+.woocommerce-invalid-phone .extra-invalid-required {
+	display: none;
+}
+
+
+/*********************
+ *
+ *
+ * WOOCOMMERCE - SELECT BOX
+ *
+ *
+ ********************/
+.select2-container {
+	width: 360px !important;
+	max-width: 100%;
+}
+.select2-container .select2-choice {
+	border-radius: 0;
+	border-color: @lightgrey;
+	color: @highlight2;
+	padding: 8px 12px 5px;
+}
+.select2-dropdown-open .select2-choice {
+	border-color: @black;
+}
+.select2-container .select2-choice>.select2-chosen {
+	font-size: 16px;
+}
+
+.select2-search input {
+	width: 100%;
+	font-size: 14px;
+	padding: 0px 20px 0px 5px !important;
+}

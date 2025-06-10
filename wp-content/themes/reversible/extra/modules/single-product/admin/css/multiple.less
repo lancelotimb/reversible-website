@@ -1,0 +1,77 @@
+.new-post {
+	background: #fafafa;
+	border: 1px solid #DFDFDF;
+	float: left;
+	margin: 10px 10px 0 0;
+	padding: 20px;
+	position: relative;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	width: 570px;
+}
+.new-post .fields {
+	float: left;
+	padding: 10px;
+	width: 265px;
+}
+.new-post .fields > :last-of-type {
+	margin-bottom: 0px;
+}
+.new-post input[type="text"],
+.new-post .button,
+.new-post textarea {
+	width: 250px;
+}
+.new-post .coordinates {
+	display: none;
+}
+.new-post .address-map-btn {
+	margin-top: 5px;
+	text-align: center;
+}
+#reference {
+	display: none;
+}
+#multiple-wrapper {
+	margin-right: 200px;
+}
+.extra-tool-box {
+	position: fixed;
+	top: 44px;
+	right: 0;
+	z-index: 1;
+}
+
+
+.extra-tool-box .button {
+	display: block;
+	margin-bottom: 10px;
+	text-align: center;
+	width: 180px;
+	float: left;
+}
+#add-content {
+	margin-right: 9px;
+	float: left;
+}
+
+#multiple-wrapper:after,
+.new-post:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.new-post .fields .image {
+	width: 150px;
+	margin: 10px 0 0;
+	position: relative;
+}
+.new-post .fields .image .close{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	text-decoration: none;
+}

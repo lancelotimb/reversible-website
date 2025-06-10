@@ -1,0 +1,286 @@
+.main-content:before {
+	background: @white;
+	content:"";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 180px;
+}
+/*********************
+ *
+ * HEADER
+ *
+ ********************/
+.post-header {
+	position: relative;
+	z-index: 50;
+	margin-top: 0;
+}
+/*********************
+ *
+ * LINKS STYLE GLOBAL
+ *
+ ********************/
+.post-link-home .extra-button,
+.post-navigation .extra-button {
+	border-color: rgba(red(@black), green(@black), blue(@black), 0.2);
+}
+.post-link-home svg,
+.post-navigation a svg {
+	fill: @dark;
+	width: 50px;
+}
+/*********************
+ *
+ * NEXT & PREVIOUS
+ *
+ ********************/
+.post-navigation > .post-link {
+	position: absolute;
+	top: 50%;
+	margin: -25px 0 0 0;
+}
+// CLEANER
+.post-navigation:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+// PREVIOUS
+.post-link-previous {
+	left: -110px;
+	text-align: right;
+}
+.post-link-previous a {
+	float: left;
+}
+// NEXT
+.post-link-next {
+	right: -110px;
+	direction: rtl;
+}
+.post-link-next a {
+	float: right;
+}
+.post-link-next .inner {
+	margin-right: 0;
+	margin-left: 15px;
+}
+/*********************
+ *
+ * HOME
+ *
+ ********************/
+.post-link-home {
+	margin: 0;
+	position: absolute;
+	top: 120px;
+	left: 60px;
+	z-index: 60;
+}
+.post-link-home .extra-button {
+	float: left;
+}
+/*********************
+ *
+ * DATE
+ *
+ ********************/
+.post-content .post-date {
+	color: @dark;
+	font-family: @font1;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 25px;
+	margin: 60px 0 0 0;
+}
+/*********************
+ *
+ * COMMENTS
+ *
+ ********************/
+.post-comments {
+	background: @white;
+	margin: 60px 0;
+	padding: 60px 0;
+}
+.post-comments .main-content {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+// #reply-title,
+.post-comments .comments-title {
+	border-bottom: 1px solid rgba(red(@black), green(@black), blue(@black), 0.2);
+	font-size: 18px;
+	font-weight: 600;
+	padding: 0 0 30px 0;
+	margin: 0 0 35px 0;
+}
+#reply-title {
+	display: none;
+}
+
+.commentlist {
+	list-style: none;
+}
+.commentlist li {
+	list-style: none;
+	margin: 0;
+	padding: 40px 0;
+}
+.commentlist li:first-child {
+	border-top: none;
+}
+.commentlist li:before {
+	display: none;
+}
+.gravatar {
+	float: left;
+	width: 105px;
+}
+.comment-details {
+	float: left;
+	width: 485px;
+}
+// AUTHOR
+.comment-author-details {
+	color: @dark;
+	font-size: 16px;
+}
+.comment-hour {
+	color: @lightgrey;
+}
+.comment-author-details .comment-author {
+	color: @dark;
+	font-weight: 600;
+}
+.comment-author-details .comment-author a {
+	color: @highlight2;
+}
+.comment-author-details .comment-author a:hover {
+	color: @highlight;
+}
+.comment-author-details > span:after {
+	content: '\2022';
+	color: @highlight;
+	display: inline-block;
+	font-family: Arial, sans-serif;
+	font-size: 10px;
+	margin: 0 12px 0 15px;
+	vertical-align: 2px;
+}
+.comment-author-details > span:last-child:after {
+	display: none;
+}
+.comment-content {
+	font-size: 16px;
+	line-height: 25px;
+}
+.children {
+	clear: both;
+	padding-left: 45px;
+}
+.children .comment-details {
+	width: 435px;
+}
+.commentlist li:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+/*********************
+ *
+ * COMMENT FORM
+ *
+ ********************/
+#commentform p {
+	margin-top: 10px;
+}
+#commentform p:first-child {
+	margin-top: 0;
+}
+#commentform label {
+	display: block;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+#commentform .comment-notes {
+	font-size: 14px;
+	float: left;
+}
+
+.respond-wrapper {
+	overflow: hidden;
+	height: auto;
+}
+
+.touch #submit:active,
+.no-touch #submit:hover {
+	background-color: @black;
+}
+
+
+/*********************
+ *
+ * EASY CLEARING
+ *
+ ********************/
+#respond:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/*********************
+ *
+ * RESPONSIVE
+ *
+ ********************/
+@media only screen and (max-width: 1500px) and (min-width: 1351px) {
+	.main-content {
+		padding: 120px 60px 0;
+	}
+}
+
+@media only screen and (max-width: 1350px) {
+	// LINKS
+	.post-navigation > .post-link {
+		position: relative;
+		top: 0;
+		margin: 20px 0 0 0;
+	}
+	.post-link-previous {
+		left: 0;
+		float: left;
+	}
+	.post-link-next {
+		right: 0;
+		float: right;
+	}
+	// HOME
+	.post-link-home {
+		position: relative;
+		top: 0;
+		left: 0;
+		margin: 160px 0 20px;
+	}
+}
+
+@media only screen and (max-width: 690px) {
+	.post-link-home {
+		margin-top: 0;
+	}
+
+	h1, h2 {
+		font-size: 30px;
+		line-height: 30px;
+	}
+}

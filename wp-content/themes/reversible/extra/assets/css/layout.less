@@ -1,0 +1,175 @@
+/*********************
+ *
+ * BODY
+ *
+ ********************/
+html {
+	height: 100%;
+}
+body {
+	min-height: 100%;
+	background-color: @grey;
+	position: relative;
+}
+html,
+body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#scrollable-wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: visible;
+}
+.touch #scrollable-wrapper {
+	overflow-y: scroll; /* has to be scroll, not auto */
+	-webkit-overflow-scrolling: touch;
+}
+.table-wrapper {
+	display: table;
+	min-height: 100%;
+	width: 100%;
+	table-layout: fixed;
+}
+#header-wrapper {
+	display: table-cell;
+	position: relative;
+	vertical-align: top;
+}
+#wrapper {
+	display: table-cell;
+	position: relative;
+	z-index: 2;
+	vertical-align: top;
+	width: 100%;
+}
+/*********************
+ *
+ * CONTENT
+ *
+ ********************/
+.main-content {
+	margin: 0 auto;
+	padding: 120px 60px;
+	padding-bottom: 0;
+	width: 900px;
+	max-width: 100%;
+}
+/* SHARE */
+.share {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #c4c4c4;
+}
+/*********************
+ *
+ * MAIN
+ *
+ ********************/
+.main-wrapper {
+	margin: auto;
+	padding: 0;
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	min-height: 10px;
+}
+.right-content {
+	float: right;
+	min-height: 1px;
+}
+.left-content {
+	float: left;
+	min-height: 1px;
+}
+.small-content {
+	width: 50%;
+}
+.large-content {
+	width: auto;
+}
+.full-content {
+	width: 100%;
+}
+/*********************
+ *
+ * EASY CLEARING
+ *
+ ********************/
+.main-wrapper:after,
+.main-content:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+@media only screen and (max-width: 1500px) {
+	.main-content {
+		padding: 60px 60px 0;
+	}
+}
+
+/*********************
+ *
+ * TABLETTE AND LESS
+ *
+ ********************/
+@media only screen and (max-width: 1024px) {
+	/*********************
+	 * HEADER
+	 ********************/
+	body {
+		width: 100%;
+		min-width: 100%;
+	}
+	.table-wrapper {
+		display: block;
+	}
+	#wrapper {
+		display: block;
+		padding-left: 0;
+	}
+	.main-content {
+		padding: 40px;
+		width: 860px;
+	}
+}
+
+@media screen and (max-width: 782px) {
+	#wpadminbar {
+		bottom: auto;
+	}
+}
+
+/*********************
+ *
+ * SMARTPHONE
+ *
+ ********************/
+@media only screen and (max-width: 690px) {
+	#wrapper {
+		padding-top: 110px;
+	}
+	#wrapper:before {
+		background: @white;
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: auto;
+		left: 0;
+		height: 110px;
+		z-index: 1;
+	}
+	.sub-navigation {
+		display: none;
+	}
+	.main-content {
+		padding: 20px;
+	}
+}

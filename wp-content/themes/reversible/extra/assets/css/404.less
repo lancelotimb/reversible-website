@@ -1,0 +1,65 @@
+#header-wrapper,
+#footer,
+.shopping-menu {
+	display: none !important;
+}
+.table-wrapper,
+#scrollable,
+#wrapper,
+.main-wrapper {
+	display: block;
+	height: 100%;
+}
+body {
+	background: transparent url(@{themeurl}/extra/assets/img/404.jpg) bottom center no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+.main-wrapper {
+	display: table;
+}
+.large-content {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding-bottom: 200px;
+}
+h1 {
+	font-size: 90px;
+	line-height: 90px;
+	margin-bottom: 30px;
+}
+.large-content .extra-button {
+	background: @highlight;
+	color: @white;
+	border: none;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 400;
+	height: 41px;
+	line-height: 41px;
+	padding: 0 15px;
+	width: 200px;
+}
+.large-content .extra-button:hover {
+	color: @white;
+}
+.large-content .extra-button:before {
+	background: @dark;
+}
+@media only screen and (max-width: 690px) {
+	h1 {
+		font-size: 50px;
+		line-height: 50px;
+		margin-bottom: 20px;
+	}
+	#wrapper {
+		padding-top: 0 !important;;
+	}
+	#wrapper:before {
+		display: none !important;;
+	}
+	#scrollable > .account-link {
+		display: none !important;
+	}
+}

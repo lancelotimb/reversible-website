@@ -1,0 +1,302 @@
+html.cart-open {
+	overflow: hidden;
+}
+
+#cart-detail-overlay {
+	position:         fixed;
+	top:              0;
+	left:             0;
+	width:            100%;
+	height:           100%;
+	background-color: rgba(red(@black), green(@black), red(@black), 0.75);
+	z-index:          11;
+
+	display:          none;
+}
+
+.cart-open #cart-detail-overlay {
+	cursor: url('@{themeurl}/extra/assets/img/close-menu.png') 25 25, pointer;
+}
+
+#cart-detail-container {
+	max-width:          100%;
+	width:              480px;
+	height:             100%;
+	overflow:           hidden;
+	position:           fixed;
+	-webkit-transform:  translateZ(0);
+	top:                0;
+	right:              0;
+	z-index:            11;
+	background-color:   @grey;
+
+	-moz-box-shadow:    0px 0px 50px 0 rgba(0, 0, 0, 0.07);
+	-webkit-box-shadow: 0px 0px 50px 0 rgba(0, 0, 0, 0.07);
+	-o-box-shadow:      0px 0px 50px 0 rgba(0, 0, 0, 0.07);
+	box-shadow:         0px 0px 50px 0 rgba(0, 0, 0, 0.07);
+
+	display:            none;
+}
+
+#cart-detail-container .overlay-top {
+	display:          block;
+	height:           140px;
+	width:            auto;
+	background-color: @grey;
+	position:         absolute;
+	top:              0;
+	left:             0;
+	right:            0;
+	z-index:          2;
+	pointer-events:   none;
+}
+
+#cart-detail-container > .scrollable {
+	padding:    170px 0 0;
+	width:      100%;
+	height:     100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.cart-open #cart-detail-container > .scrollable {
+	overflow-y: visible;
+}
+
+#cart-detail-container > .scrollable > .inner {
+	width: 480px;
+}
+
+/*********************
+ *
+ * MESSAGES
+ *
+ ********************/
+#cart-detail-container .message {
+	width:      480px;
+	height:     auto;
+	text-align: center;
+	display:    none;
+	margin:     0 0 70px;
+}
+
+#cart-detail-container .message-loading {
+	position:   relative;
+	min-height: 4px;
+}
+
+.cart-loading #cart-detail-container .message-loading {
+	display: block;
+}
+
+.cart-empty #cart-detail-container .message-empty {
+	display: block;
+}
+
+/*********************
+ *
+ * FOOTER
+ *
+ ********************/
+#cart-detail-container .footer {
+	width:            100%;
+	height:           210px;
+	padding:          0 0 30px;
+	background-color: @grey;
+}
+
+#cart-detail-container.footer-fixed .footer {
+	width:    auto;
+	position: absolute;
+	bottom:   0;
+	left:     0;
+	right:    0;
+	padding:  30px 0;
+	z-index:  100;
+}
+
+#cart-detail-container .footer > .inner {
+	width:  240px;
+	margin: 0 auto 30px 120px;
+}
+
+#cart-detail-container .footer > .inner > * {
+	font-family: @font1;
+	font-style:  normal;
+	font-weight: 600;
+	font-size:   18px;
+	display:     inline-block;
+	float:       right;
+}
+
+#cart-detail-container .footer .price {
+	color:            @black;
+	line-height:      50px;
+	height:           50px;
+	max-width:        100%;
+	padding:          0 23px;
+	background-color: #e5e5e5;
+	position:         relative;
+}
+
+#cart-detail-container .footer .price-inner {
+	min-width: 20px;
+}
+
+#cart-detail-container .footer .buy-link {
+	width:            100%;
+	margin-top:       10px;
+}
+
+
+.cart-loading #cart-detail-container .footer,
+.cart-empty #cart-detail-container .footer {
+	display: none;
+}
+
+/*********************
+ *
+ * PRODUCTS
+ *
+ ********************/
+.cart-products {
+	width:  240px;
+	margin: 0 auto 0 120px;
+}
+
+#cart-detail-container.footer-fixed .cart-products {
+	padding-bottom: 180px;
+}
+
+.cart-empty #cart-detail-container.footer-fixed .cart-products {
+	padding-bottom: 0;
+}
+
+.cart-products .product {
+	width:         100%;
+	height:        240px;
+	position:      relative;
+	margin-bottom: 60px;
+	overflow:      hidden;
+}
+
+.cart-products .product-link {
+	position: absolute;
+	top:      0;
+	display:  block;
+	height:   240px;
+	width:    240px;
+}
+
+.cart-products .product .product-count {
+	color:         @white;
+	position:      absolute;
+	top:           40px;
+	left:          40px;
+	z-index:       20;
+	background:    @highlight;
+	height:        30px;
+	width:         30px;
+	border-radius: 100%;
+	text-align:    center;
+	line-height:   30px;
+	font-family:   @font1;
+	font-weight:   700;
+	font-size:     14px;
+	display:       block;
+
+	-webkit-transition: opacity 0.3s ease-out;
+	transition: opacity 0.3s ease-out;
+}
+.cart-products .product.sold-individually .product-count {
+	display: none;
+}
+
+.cart-products .onsale {
+	top:   40px;
+	right: 40px;
+}
+
+.cart-products .product.goodbye .product-link .square.over {
+	display: none;
+}
+
+/*********************
+ *
+ * REMOVE BUTTON
+ *
+ ********************/
+.extra-remove-from-cart {
+	display:     block;
+	height:      50px;
+	width:       50px;
+	position:    absolute;
+	top:         0;
+	right:       0;
+	white-space: nowrap;
+	text-indent: 100%;
+	overflow:    hidden;
+}
+
+.extra-remove-from-cart .icon-close {
+	fill:               @lightgrey;
+	position:           absolute;
+	display:            block;
+	width: 50px;
+	height: 50px;
+
+	-webkit-transition: fill 300ms ease-out;
+	transition:         fill 300ms ease-out;
+}
+
+.extra-remove-from-cart:hover .icon-close,
+.product.goodbye .extra-remove-from-cart:hover .icon-close {
+	fill: @highlight;
+}
+
+/*********************
+ *
+ * EASY CLEARING
+ *
+ ********************/
+.cart-products:after,
+#cart-detail-container .footer > .inner:after {
+	content:    ".";
+	display:    block;
+	height:     0;
+	clear:      both;
+	visibility: hidden;
+}
+
+
+/*********************
+ *
+ * SMALL DESKTOP
+ *
+ ********************/
+@media only screen and (max-width: 1740px) {
+	#cart-detail-container > .scrollable > .inner,
+	#cart-detail-container .message,
+	#cart-detail-container {
+		width: 360px;
+	}
+	#cart-detail-container .footer > .inner {
+		margin: 0 auto 30px 60px;
+	}
+	.cart-products {
+		margin: 0 auto 0 60px;
+	}
+}
+
+@media only screen and (max-width: 690px) {
+	#cart-detail-container .overlay-top {
+		height: 110px;
+	}
+	#cart-detail-container > .scrollable {
+		padding: 140px 0 0;
+	}
+	#cart-detail-container .footer {
+		height: 180px;
+		padding: 30px 0 0;
+	}
+}

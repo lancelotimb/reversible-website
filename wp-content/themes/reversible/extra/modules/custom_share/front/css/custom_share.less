@@ -1,0 +1,143 @@
+.extra-social-wrapper {
+	text-align: right;
+	display: table;
+	font-size: 0;
+	position: absolute;
+	top: 235px;
+	left: -160px;
+	width: 100px;
+}
+.extra-social-wrapper:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.extra-social-inner {
+	display: table-row;
+}
+
+.extra-social-button-wrapper {
+	clear: both;
+	display: block;
+	float: right;
+	margin-bottom: 10px;
+	max-width: 100%;
+}
+
+.extra-social-button {
+	color: @white;
+	display: inline-block;
+	font-size: 17px;
+	padding: 0 10px;
+}
+
+.extra-social-button .icon-wrapper {
+	display: inline-block;
+	line-height: 30px;
+	margin: 0;
+	position: relative;
+	width: 30px;
+	height: 30px;
+	text-align: left;
+}
+.extra-social-button .icon {
+	display: inline-block;
+	fill: @white;
+	width: 20px;
+	height: 20px;
+	vertical-align: -5px;
+	margin: 0 5px;
+}
+
+.extra-social-button .counter {
+	display: inline-block;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	line-height: 30px;
+}
+.extra-social-button:hover .counter {
+	color: @white;
+}
+.js .extra-social-button .text {
+	display: none;
+}
+// FACEBOOK
+.extra-social-facebook {
+	background-color: rgba(70, 96, 159, 0.5);
+}
+.touch .extra-social-facebook:active,
+.no-touch .extra-social-facebook:hover {
+	background-color: rgba(70, 96, 159, 1);
+}
+
+// TWITTER
+.extra-social-twitter {
+	background-color: rgba(92, 172, 242, 0.5);
+}
+.touch .extra-social-twitter:active,
+.no-touch .extra-social-twitter:hover {
+	background-color: rgba(92, 172, 242, 1);
+}
+
+// GOOGLE PLUS
+.extra-social-gplus {
+	background-color: rgba(244, 67, 54, 0.5);
+}
+.touch .extra-social-gplus:active,
+.no-touch .extra-social-gplus:hover {
+	background-color: rgba(244, 67, 54, 1);
+}
+
+// SHARE BY MAIL
+.extra-social-share {
+	background-color: rgba(233, 6, 6, 0.5);
+}
+.touch .extra-social-share:active,
+.no-touch .extra-social-share:hover {
+	background-color: rgba(233, 6, 6, 1);
+}
+
+
+.no-js .extra-social-share {
+	display: none;
+}
+// FANCYBOX
+.fancybox-skin,
+.fancybox-opened .fancybox-skin{
+	background: @white;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+.extra-social-share-wrapper {
+	padding: 20px;
+	text-align: left;
+	width: 400px;
+}
+
+.js .js-hidden {
+	display: none;
+}
+
+
+
+
+@media only screen and (max-width: 1350px) {
+	.extra-social-wrapper {
+		display: block;
+		position: relative;
+		top: 50px;
+		left: 0;
+		width: 100%;
+	}
+	.extra-social-inner {
+		display: block;
+	}
+
+	.extra-social-button-wrapper {
+		clear: none;
+		margin-left: 15px;
+	}
+}

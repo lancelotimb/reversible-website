@@ -1,0 +1,85 @@
+.fancybox-skin {
+	border-radius: 0;
+}
+.fancybox-opened {
+	cursor: default;
+}
+.fancybox-opened .fancybox-skin {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.fancybox-overlay {
+	cursor: url('@{themeurl}/extra/assets/img/close-menu.png') 25 25, pointer;
+	background: rgba(red(@black), green(@black), red(@black), 0.75);
+}
+
+.square-button.extra-flash-messages-close-link {
+	position: absolute;
+	top: 35px;
+	right: 35px;
+	border-color: #d5d5d5;
+}
+
+.extra-flash-message {
+	text-align: center;
+	padding: 127px 20px 55px;
+}
+
+.extra-flash-message .extra-flash-messages-close-link svg {
+	fill: @black;
+}
+.extra-flash-message .icon-close {
+	height: 50px;
+	top: 0;
+}
+
+.extra-flash-message .icon-broken-heart {
+	width: 44px;
+	height: 44px;
+	display: block;
+	fill: @black;
+
+	position: absolute;
+	left: 50%;
+	margin-left: -22px;
+	top: 83px;
+}
+
+.extra-flash-message h4 {
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 70px;
+	color: @highlight;
+	text-transform: uppercase;
+	margin: 0;
+}
+.extra-flash-message .chapo {
+	font-size: 20px;
+	margin-bottom: 7px;
+}
+.extra-flash-message * {
+	font-size: 18px;
+}
+
+.extra-flash-message:after {
+	content: '';
+	display: block;
+	width: 65px;
+	height: 5px;
+
+	margin: 29px auto 30px;
+	background-repeat: repeat-x;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAFAQMAAABCXz8WAAAABlBMVEUAAACtwW4MLN2sAAAAAXRSTlMAQObYZgAAABJJREFUCNdj4GAQYVBicGRoAAACywEAAvNetgAAAABJRU5ErkJggg==);
+}
+
+.extra-flash-message .woocommerce-error .icon-broken-heart {
+	top: 73px;
+}
+
+.extra-checkout-notices ul {
+	list-style: none;
+}
+
+.extra-checkout-notices a.wc-forward {
+	display: none;
+}

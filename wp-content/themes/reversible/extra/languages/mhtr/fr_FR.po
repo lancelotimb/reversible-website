@@ -1,0 +1,450 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Table Rate Shipping Plus\n"
+"POT-Creation-Date: 2015-05-25 14:23+0100\n"
+"PO-Revision-Date: 2015-05-25 15:34+0100\n"
+"Last-Translator: Vincent Saisset <vs@extralagence.com>\n"
+"Language-Team: Vincent Saisset <vs@extralagence.com>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-WPHeader: mh-wc-table-rate-plus.php\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: EDD_SL_Plugin_Updater.php:177
+#, php-format
+msgid ""
+"There is a new version of %1$s available. <a target=\"_blank\" class="
+"\"thickbox\" href=\"%2$s\">View version %3$s details</a>."
+msgstr ""
+"Il y a une nouvelle version de %1$s disponible. <a target=\"_blank\" class="
+"\"thickbox\" href=\"%2$s\">Voir le détail de la version %3$s</a>."
+
+#: EDD_SL_Plugin_Updater.php:184
+#, php-format
+msgid ""
+"There is a new version of %1$s available. <a target=\"_blank\" class="
+"\"thickbox\" href=\"%2$s\">View version %3$s details</a> or <a href=\"%4$s"
+"\">update now</a>."
+msgstr ""
+"Il y a une nouvelle version de %1$s disponible. <a target=\"_blank\" class="
+"\"thickbox\" href=\"%2$s\">Voir les détails de la version %3$s </a> ou <a "
+"href=\"%4$s\">mettre à jour maintenant</a>."
+
+#: EDD_SL_Plugin_Updater.php:324
+msgid "You do not have permission to install plugin updates"
+msgstr ""
+"Vous n’avez pas la permission pour installer les mises à jour de ce plugin"
+
+#: EDD_SL_Plugin_Updater.php:324
+msgid "Error"
+msgstr "Erreur"
+
+#: mh-wc-table-rate-plus.php:69
+msgid "Table Rate Plus"
+msgstr "Tableau des frais de livraison"
+
+#: mh-wc-table-rate-plus.php:70
+msgid "A table rate shipping plugin"
+msgstr "Un plugin de gestion des frais de livraison"
+
+#: mh-wc-table-rate-plus.php:125
+msgid "Enable"
+msgstr "Activé"
+
+#: mh-wc-table-rate-plus.php:127
+msgid "Enable this shipping method"
+msgstr "Activer cette méthode de livraison"
+
+#: mh-wc-table-rate-plus.php:131
+msgid "License Key"
+msgstr "Clé licence"
+
+#: mh-wc-table-rate-plus.php:132
+msgid "Enter your license key, as shown in your confirmation email"
+msgstr "La clé de votre plugin, reçu lors de votre email de confirmation"
+
+#: mh-wc-table-rate-plus.php:137
+msgid "Tax Status"
+msgstr "Taxes"
+
+#: mh-wc-table-rate-plus.php:141
+msgid "Taxable"
+msgstr "Taxable"
+
+#: mh-wc-table-rate-plus.php:142 mh-wc-table-rate-plus.php:321
+msgid "None"
+msgstr "Aucune"
+
+#: mh-wc-table-rate-plus.php:146
+msgid "Handling Fee"
+msgstr "Frais de manutention"
+
+#: mh-wc-table-rate-plus.php:147
+msgid "Fee, excluding tax. Leave blank to disable."
+msgstr "Frais HT. Laisser vide pour désactiver"
+
+#: mh-wc-table-rate-plus.php:153
+msgid "Calculation Type"
+msgstr "Méthode de calcul"
+
+#: mh-wc-table-rate-plus.php:154
+msgid ""
+"<strong>Per order</strong> - shipping will be calculated based on whole "
+"cart, using the highest priority shipping class.<br><br><strong>Per shipping "
+"class</strong> - shipping will be calculated for each shipping class, then "
+"added together"
+msgstr ""
+"<strong>Par ordre</strong> - les frais de livraison sont calculées sur "
+"l’intégralité du panier en utilisant la classe de livraison ayant la plus "
+"haute priorité.<br><br><strong>Par classe de livraison</strong> - les frais "
+"de livraison sont calculées pour chaque classe de livraison puis ajouté "
+"ensemble."
+
+#: mh-wc-table-rate-plus.php:158
+msgid "Per order"
+msgstr "Par ordre"
+
+#: mh-wc-table-rate-plus.php:159
+msgid "Per shipping class"
+msgstr "Par classe de livraison"
+
+#: mh-wc-table-rate-plus.php:211
+msgid "Standard Shipping"
+msgstr "Livraison standard"
+
+#: mh-wc-table-rate-plus.php:295
+msgid "You have not entered a valid license key for Table Rate Shipping Plus."
+msgstr "Votre clé de licence n’est pas valide…"
+
+#: mh-wc-table-rate-plus.php:312
+msgid "Everywhere Else"
+msgstr "Tout le reste"
+
+#: mh-wc-table-rate-plus.php:320
+msgid "Any"
+msgstr "Toutes"
+
+#: mh-wc-table-rate-plus.php:348
+msgid "No countries with states available"
+msgstr "Aucun pays avec les états disponible"
+
+#: mh-wc-table-rate-plus.php:349
+msgid "Unavailable"
+msgstr "Non disponible"
+
+#: mh-wc-table-rate-plus.php:353
+#, php-format
+msgid "Weight (%s)"
+msgstr "Poids (%s)"
+
+#: mh-wc-table-rate-plus.php:354
+#, php-format
+msgid "Total (%s)"
+msgstr "Total (%s)"
+
+#: mh-wc-table-rate-plus.php:355
+msgid "Item count"
+msgstr "Nombre de produit"
+
+#: mh-wc-table-rate-plus.php:358 mh-wc-table-rate-plus.php:485
+msgid "Country"
+msgstr "Pays"
+
+#: mh-wc-table-rate-plus.php:359
+msgid "State"
+msgstr "État"
+
+#: mh-wc-table-rate-plus.php:360
+msgid "Post/zip code"
+msgstr "Code postal"
+
+#: mh-wc-table-rate-plus.php:440
+msgid "Table Rate Shipping Plus"
+msgstr "Tableau des frais de livraison"
+
+#: mh-wc-table-rate-plus.php:442
+msgid "Export/Backup Settings"
+msgstr "Export des paramètres"
+
+#: mh-wc-table-rate-plus.php:458
+msgid "Shipping Zones"
+msgstr "Zone de livraison"
+
+#: mh-wc-table-rate-plus.php:460
+msgid ""
+"After adding a shipping zone, hit \"Save changes\" so that it appears as an "
+"option in the table rate section."
+msgstr ""
+"Après avoir ajouté une zone de livraison, enregistrez vos changements pour "
+"que l’option apparaisse dans le tableau des frais de livraison."
+
+#: mh-wc-table-rate-plus.php:469 mh-wc-table-rate-plus.php:708
+#: mh-wc-table-rate-plus.php:804
+msgid "ID"
+msgstr "Identifiant"
+
+#: mh-wc-table-rate-plus.php:470 mh-wc-table-rate-plus.php:709
+msgid "Name"
+msgstr "Nom"
+
+#: mh-wc-table-rate-plus.php:470
+msgid "Shipping zone name, will appear in table rates table."
+msgstr ""
+"Nom des zones de livraison, apparait dans le tableau des frais de livraison"
+
+#: mh-wc-table-rate-plus.php:471
+msgid "Zone Type"
+msgstr "Type de zone"
+
+#: mh-wc-table-rate-plus.php:472
+msgid "Values"
+msgstr "Valeurs"
+
+#: mh-wc-table-rate-plus.php:472
+msgid ""
+"Enter the values for the zone. For more information please see the support "
+"documentation."
+msgstr ""
+"Saisissez les valeurs pour la zone. pour plus d’information veuillez vous "
+"référer à la documentation."
+
+#: mh-wc-table-rate-plus.php:477
+msgid "Add Shipping Zone"
+msgstr "Ajouter une zone de livraison"
+
+#: mh-wc-table-rate-plus.php:477
+msgid "Delete Selected Zones"
+msgstr "Supprimer les zones sélectionnées"
+
+#: mh-wc-table-rate-plus.php:484
+msgid "Default Zone (everywhere else)"
+msgstr "Zone par défaut (partout ailleurs)"
+
+#: mh-wc-table-rate-plus.php:486
+msgid "All allowed countries"
+msgstr "Tous les pays autorisés"
+
+#: mh-wc-table-rate-plus.php:597
+msgid "Enter zone name"
+msgstr "Saisissez le nom de la zone"
+
+#: mh-wc-table-rate-plus.php:607
+msgid "Select one or more countries"
+msgstr "Sélectionnez un ou plusieurs pays"
+
+#: mh-wc-table-rate-plus.php:615
+msgid "Select one or more states"
+msgstr "Sélectionnez un ou plusieurs état"
+
+#: mh-wc-table-rate-plus.php:623
+msgid "Enter one postal code or range per line"
+msgstr "Saisissez un code postal ou une plage par ligne"
+
+#: mh-wc-table-rate-plus.php:624
+msgid "Exclude"
+msgstr "Exclure"
+
+#: mh-wc-table-rate-plus.php:624
+msgid ""
+"If checked, the above postal codes will be excluded from the shipping zone. "
+"All other postal codes will be accepted."
+msgstr ""
+"Si coché, les codes postaux suivant seront exclus de la zone de livraison. "
+"Tous les autres codes postaux seront acceptés."
+
+#: mh-wc-table-rate-plus.php:628
+msgid "Edit zone settings"
+msgstr "Modifier la configuration de la zone"
+
+#: mh-wc-table-rate-plus.php:673
+msgid "Delete the selected zones?"
+msgstr "Voulez-vous supprimer les zones selectionnées ?"
+
+#: mh-wc-table-rate-plus.php:697
+msgid "Shipping Services"
+msgstr "Services de livraison"
+
+#: mh-wc-table-rate-plus.php:699
+msgid ""
+"After adding a shipping service, hit \"Save changes\" so that it appears as "
+"an option in the table rate section."
+msgstr ""
+"Après avoir ajouté un service de livraison, enregistrez vos changements pour "
+"que l’option apparaisse dans le tableau des frais de livraison"
+
+#: mh-wc-table-rate-plus.php:709
+msgid ""
+"Name of shipping service. This will be displayed to customers when choosing "
+"a shipping service."
+msgstr ""
+"Nom du service de livraison. Affiché aux clients lors du choix du service de "
+"livraison."
+
+#: mh-wc-table-rate-plus.php:710
+msgid "Priority"
+msgstr "Priorité"
+
+#: mh-wc-table-rate-plus.php:710
+msgid "Priority will control order in which shipping service are displayed."
+msgstr "Les services de livraison sont affichées en fonction de leur priorité"
+
+#: mh-wc-table-rate-plus.php:715
+msgid "Add Shipping Service"
+msgstr "Ajouter un service de livraison"
+
+#: mh-wc-table-rate-plus.php:715
+msgid "Delete Selected Services"
+msgstr "Supprimer les services de livraison selectionnés"
+
+#: mh-wc-table-rate-plus.php:774
+msgid "Delete the selected services?"
+msgstr "Voulez-vous supprimer les services de livraison sélectionnés ?"
+
+#: mh-wc-table-rate-plus.php:798
+msgid "Shipping Rates"
+msgstr "Tableau des frais de livraison"
+
+#: mh-wc-table-rate-plus.php:805
+msgid "Zone"
+msgstr "Zone"
+
+#: mh-wc-table-rate-plus.php:805
+msgid "Shipping zone, as defined in Shipping Zones table."
+msgstr "Zone de livraison, défini dans le tableau des zones de livraison"
+
+#: mh-wc-table-rate-plus.php:806
+msgid "Service"
+msgstr "Service"
+
+#: mh-wc-table-rate-plus.php:806
+msgid ""
+"Name of shipping service. If a shipping service is shared by multiple table "
+"rates, the cheapest applicable table rate will be given to the customer."
+msgstr ""
+"Nom du service de livraison. Si un service de livraison est utilisé par "
+"plusieurs ligne, les frais les moins chers sont appliqués."
+
+#: mh-wc-table-rate-plus.php:807
+msgid "Class"
+msgstr "Classe"
+
+#: mh-wc-table-rate-plus.php:807
+msgid "Shipping class, as defined in WooCommerce settings."
+msgstr "Classe de livraison, défini dans les paramètres de WooCommerce."
+
+#: mh-wc-table-rate-plus.php:808
+msgid "Condition"
+msgstr "Condition"
+
+#: mh-wc-table-rate-plus.php:808
+msgid "Choose which metric to base your table rate on."
+msgstr ""
+"Veuillez choisir quelle unité de mesure est utilisée dans votre tableau."
+
+#: mh-wc-table-rate-plus.php:809
+msgid "Min"
+msgstr "Min"
+
+#: mh-wc-table-rate-plus.php:809
+msgid "Minimum, in decimal format. Inclusive."
+msgstr "Minimum, en décimal. Inclusif"
+
+#: mh-wc-table-rate-plus.php:810
+msgid "Max"
+msgstr "Max"
+
+#: mh-wc-table-rate-plus.php:810
+msgid ""
+"Maximum, in decimal format. Inclusive. To impose no upper limit, use *\"."
+msgstr ""
+"Maximum, en décimal. Inclusif. Si vous ne souhaitez pas imposer de limite, "
+"utilisez « * ». "
+
+#: mh-wc-table-rate-plus.php:811
+msgid "Cost"
+msgstr "Coût"
+
+#: mh-wc-table-rate-plus.php:811
+msgid "Flat rate cost, excluding tax."
+msgstr "Coût forfaitaire, hors taxe."
+
+#: mh-wc-table-rate-plus.php:812
+msgid "Cost Per Item"
+msgstr "Coût par produit"
+
+#: mh-wc-table-rate-plus.php:812
+msgid "Additional cost per item, excluding tax."
+msgstr "Coût supplémentaire par article, hors taxe."
+
+#: mh-wc-table-rate-plus.php:813
+#, php-format
+msgid "Cost Per %s"
+msgstr "Coût par %s"
+
+#: mh-wc-table-rate-plus.php:813
+msgid "Additional cost per weight unit, excluding tax."
+msgstr "Coût supplémentaire par unité de poids, hors taxe."
+
+#: mh-wc-table-rate-plus.php:818
+msgid "Add Table Rate"
+msgstr "Ajouter une ligne"
+
+#: mh-wc-table-rate-plus.php:818
+msgid "Delete Selected Rates"
+msgstr "Supprimer les lignes selectionnées"
+
+#: mh-wc-table-rate-plus.php:918
+msgid "Delete the selected rates?"
+msgstr "Voulez-vous supprimer les lignes selectionnées ?"
+
+#: mh-wc-table-rate-plus.php:954
+msgid "Class Priority"
+msgstr "Priorité des classes de livraison"
+
+#: mh-wc-table-rate-plus.php:959
+msgid ""
+"Drag and drop the above shipping classes to control their priority. This is "
+"only used for the <strong>per order</strong> calculation type."
+msgstr ""
+"Glisser / déposer les classes de livraison pour contrôler leur priorité. "
+"Ceci n’est utilisé qu’avec la méthode de calcul « Par ordre »."
+
+#: mh-wc-table-rate-plus.php:1019
+msgid "Import Settings"
+msgstr "Importer une configuration"
+
+#: mh-wc-table-rate-plus.php:1021
+msgid "Import settings from backup file"
+msgstr "Importer une configuration depuis une sauvegarde"
+
+#. Plugin Name of the plugin/theme
+msgid "WooCommerce Table Rate Shipping Plus"
+msgstr "WooCommerce Tableau des frais de livraison"
+
+#. Plugin URI of the plugin/theme
+msgid "http://mangohour.com/plugins/woocommerce-table-rate-shipping"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Calculate shipping costs based on destination, weight and price."
+msgstr ""
+"Calculer les frais de livraison basés sur la destination, le poids et le "
+"prix."
+
+#. Author of the plugin/theme
+msgid "mangohour"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://mangohour.com/"
+msgstr ""

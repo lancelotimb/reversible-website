@@ -1,0 +1,229 @@
+// LAYOUT
+.references-wrapper {
+	margin: 0 auto;
+	padding: 0;
+	max-width: 1380px;
+	width: 100%;
+}
+.references-item {
+	cursor: pointer;
+	float: left;
+	list-style: none;
+	overflow: hidden;
+	position: relative;
+	margin: 30px;
+	width: 420px;
+	height: 420px;
+	max-width: 100%;
+}
+.references-item-inner {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.reference-logo {
+	background: rgba(red(@white), green(@white), blue(@white), 0.5);
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	width: 100%;
+	height: auto;
+	opacity: 0;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.reference-logo:before {
+	content: "";
+	display: block;
+	padding-top: 100%;
+}
+.reference-logo img {
+	display: block;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 180px;
+	height: 180px;
+	max-width: 100%;
+	max-height: 100%;
+}
+.no-touch .references-item:hover .reference-logo,
+.touch .references-item .reference-logo {
+	opacity: 1;
+}
+.reference-content-wrapper {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+}
+.reference-content {
+	background: @white;
+	display: table;
+	font-size: 18px;
+	line-height: 30px;
+	table-layout: fixed;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	min-height: 420px;
+}
+.reference-content-inner {
+	display: table-cell;
+	padding: 40px;
+	vertical-align: middle;
+	width: 100%;
+	height: 100%;
+}
+.reference-content .icon-close {
+	fill: @lightgrey;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50px;
+	height: 50px;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.references-item:hover .icon-close {
+	fill: @dark;
+}
+// > 1710
+@media only screen and (min-width: 1710px) {
+	.references-wrapper {
+		max-width: 1380px;
+	}
+	.references-item:nth-child(3n+1) {
+		margin-left: 0;
+	}
+	.references-item:nth-child(3n+0) {
+		margin-right: 0;
+	}
+}
+// 1260 < 1709
+@media only screen and (min-width: 1260px) and (max-width: 1709px) {
+	.references-wrapper {
+		max-width: 900px;
+	}
+	.references-item:nth-child(2n+1) {
+		margin-left: 0;
+	}
+	.references-item:nth-child(2n+0) {
+		margin-right: 0;
+	}
+}
+// 1025 < 1259
+@media only screen and (min-width: 1025px) and (max-width: 1259px) {
+	.references-wrapper {
+		max-width: 100%;
+	}
+	.references-item {
+		float: left;
+		margin: 0;
+		padding: 30px 30px 0 30px;
+		width: 50%;
+		height: auto;
+	}
+	.references-item:nth-child(odd) {
+		padding-right: 15px;
+	}
+	.references-item:nth-child(even) {
+		padding-left: 15px;
+	}
+	.references-item:nth-child(even):before {
+		content: ".";
+		display: block;
+		height: 0;
+		clear: left;
+		visibility: hidden;
+	}
+	.reference-content {
+		font-size: 14px;
+	}
+}
+// 900 < 1024
+@media only screen and (min-width: 900px) and (max-width: 1024px) {
+	.references-wrapper {
+		max-width: 900px;
+	}
+	.references-item:nth-child(2n+1) {
+		margin-left: 0;
+	}
+	.references-item:nth-child(2n+0) {
+		margin-right: 0;
+	}
+}
+// 650 < 899
+@media only screen and (min-width: 650px) and (max-width: 899px) {
+	.references-wrapper {
+		max-width: 100%;
+	}
+	.references-item {
+		float: left;
+		margin: 0;
+		padding: 30px;
+		width: 50%;
+	}
+	.references-item:nth-child(odd) {
+		padding-right: 15px;
+	}
+	.references-item:nth-child(even) {
+		padding-left: 15px;
+	}
+	.references-item:nth-child(even):before {
+		content: ".";
+		display: block;
+		height: 0;
+		clear: left;
+		visibility: hidden;
+	}
+}
+// < 649
+@media only screen and (max-width: 649px) {
+	.references-wrapper {
+		width: 450px;
+		max-width: 100%;
+	}
+	.references-item {
+		margin: 30px 0;
+	}
+}
+
+// SMALL ITEM
+.small-item.references-item {
+	height: auto;
+	min-height: 0;
+	overflow: visible;
+}
+.small-item.references-item:after {
+	display: none;
+}
+.small-item .reference-content {
+	font-size: 14px;
+	height: auto;
+	min-height: 0;
+}
+.small-item .reference-content-wrapper,
+.small-item .reference-content,
+.small-item .reference-content-inner{
+	position: static;
+	display: block;
+}
+
+// 650 < 899
+@media only screen and (min-width: 650px) and (max-width: 899px) {
+	.small-item .reference-content-wrapper {
+		position: absolute;
+		top: 100%;
+	}
+}

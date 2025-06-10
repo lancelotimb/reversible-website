@@ -1,0 +1,170 @@
+.shopping-menu {
+	display:  block;
+	position: absolute;
+	top:      60px;
+	right:    120px;
+
+	z-index:  12;
+}
+.shopping-menu:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 240px;
+	height: 110px;
+	background: @grey;
+	display: none;
+}
+.shopping-menu.overlay:before {
+	display: block;
+}
+
+/*********************
+ *
+ * ACCOUNT
+ *
+ ********************/
+.account-link {
+	color:        @black;
+	font-family:  @font1;
+	font-weight:  400;
+	font-size:    16px;
+	line-height:  50px;
+	display:      block;
+	margin-right: 79px;
+	position: relative;
+	text-align: right;
+	white-space: nowrap;
+}
+
+.touch .account-link:active,
+.no-touch .account-link:hover {
+	color: @highlight2;
+}
+
+/*********************
+ *
+ * CART
+ *
+ ********************/
+.cart-link-wrapper {
+	display:  block;
+	position: relative;
+	height:   50px;
+	width:    50px;
+	float:    right;
+}
+.cart-link-wrapper .extra-loader {
+	border: 1px solid rgba(red(@black), green(@black), blue(@black), 0.2);
+}
+.cart-link {
+	border-color: rgba(red(@black), green(@black), blue(@black), 0.2);
+	height:   100%;
+	width:    100%;
+}
+
+.cart-link .inner {
+	display:     block;
+	width:       100%;
+	height:      100%;
+	overflow:    hidden;
+	white-space: nowrap;
+	text-indent: 100%;
+}
+
+.cart-link svg {
+	fill: @black;
+	display:  block;
+}
+
+.cart-link .icon-close {
+	display: none;
+}
+
+.cart-open .cart-link .icon-close {
+	display: block;
+}
+
+.cart-open .cart-link .icon-cart {
+	display: none;
+}
+
+.cart-count {
+	color:         @white;
+	position:      absolute;
+	top:           -11px;
+	right:         -11px;
+	z-index:       20;
+	background:    @highlight;
+	height:        25px;
+	width:         25px;
+	border-radius: 12px;
+	text-align:    center;
+	line-height:   25px;
+	font-family:   @font1;
+	font-weight:   700;
+	font-size:     14px;
+	display:       block;
+	opacity: 0;
+	pointer-events: none;
+
+	-webkit-transition: opacity 0.3s ease-out;
+	transition: opacity 0.3s ease-out;
+}
+
+.cart-count-loaded .cart-count {
+	opacity: 1;
+}
+.cart-empty .cart-count {
+	opacity: 0;
+}
+
+#scrollable > .account-link {
+	display: none;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	z-index: 10;
+}
+/*********************
+ *
+ * SMALL DESKTOP
+ *
+ ********************/
+@media only screen and (max-width: 1740px) {
+	.shopping-menu {
+		right: 60px;
+	}
+}
+
+
+@media only screen and (max-width: 1024px) {
+	.shopping-menu .extra-button {
+		background: @white;
+	}
+}
+
+/*********************
+ *
+ * LANDSCAPE PHONE
+ *
+ ********************/
+@media only screen and (max-width: 690px) {
+	.shopping-menu {
+		top: 30px;
+		right: 30px;
+	}
+	.account-link {
+		display: none;
+	}
+	.cart-open .account-link,
+	#scrollable > .account-link {
+		display: block;
+		margin-right: 60px;
+	}
+	.cart-open #scrollable > .account-link {
+		display: none;
+
+	}
+}

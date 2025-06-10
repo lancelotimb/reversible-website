@@ -1,0 +1,634 @@
+.custom-totop {
+	border-color: rgba(red(@dark),green(@dark),blue(@dark),0.2);
+	fill: @dark;
+	margin: 60px auto 0;
+}
+.custom-totop:hover {
+	border-color: @white;
+}
+.custom-totop svg {
+	width: 100%;
+	height: 100%;
+}
+.custom-totop svg {
+	fill: @dark;
+}
+/*********************
+ *
+ * FOOTER
+ *
+ ********************/
+#footer {
+	width: 100%;
+}
+.footer-wrapper {
+	width: 100%;
+	padding: 120px 120px 0;
+}
+
+#footer h4 {
+	color: @black;
+	font-family: @font1;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 20px;
+	text-transform: none;
+}
+
+/*********************
+ *
+ * LINES & COLUMNS
+ *
+ ********************/
+.line {
+	display: block;
+	width: 100%;
+}
+.column {
+	display: block;
+	width: 100%;
+	float: left;
+}
+.column.column-four {
+	width: 26.08695652%;
+}
+.column.column-four.column-last {
+	width: 21.73913043%;
+}
+
+.column.column-six {
+	width: 17.39130435%;
+}
+
+.column.column-three {
+	width: 34.78260870%;
+}
+.column.column-three.column-last {
+	width: 30.43478261%;
+}
+
+
+
+/*********************
+ *
+ * FIRST LINE - VALUES
+ *
+ ********************/
+.first-line {
+	margin-bottom: 60px;
+}
+.value {
+	height: 60px;
+	padding: 24px 0 0 59px;
+	border-left: 1px solid @lightgrey;
+}
+.value .text {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	white-space: nowrap;
+}
+.value .icon {
+	display: block;
+	width: 60px;
+	height: 60px;
+	fill: @lightgrey;
+	position: absolute;
+	top: -24px;
+	left: -31px;
+}
+.value .text > span  {
+	position: relative;
+}
+
+/*********************
+ *
+ * SECOND LINE
+ *
+ ********************/
+.second-line .column {
+	border-left: 1px solid @lightgrey;
+	padding-left: 19px;
+	padding-right: 20px;
+	min-height: 240px;
+}
+.second-line .column.column-last {
+	padding-right: 0;
+}
+
+.second-line h4 {
+	margin: 4px 0 11px;
+	padding: 0;
+}
+
+/*********************
+ *
+ * SECOND LINE - FILTERS
+ *
+ ********************/
+.second-line ul {
+	list-style: none;
+}
+.second-line li > a {
+	color: @black;
+	font-family: @font1;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 20px;
+}
+.second-line li > a:hover {
+	color: @highlight2;
+}
+
+/*********************
+ *
+ * SECOND LINE - MENU FOOTER
+ *
+ ********************/
+#menu-footer li {
+	list-style: none;
+	position: relative;
+}
+#menu-footer li:first-child:before {
+	display: none;
+}
+
+/*********************
+ *
+ * SECOND LINE - CONTACT
+ *
+ ********************/
+.contact-content {
+	color: @black;
+	font-family: @font1;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 20px;
+	margin-bottom: 28px;
+	min-width: 140px;
+}
+
+.contact-info {
+	display: block;
+	height: 25px;
+	position: relative;
+}
+.contact-info .icon {
+	fill: @highlight;
+	width: 50px;
+	height: 50px;
+
+	display: block;
+	position: absolute;
+	top: -12px;
+	left: -17px;
+}
+.contact-email .icon {
+	width: 16px;
+	height: 16px;
+	top: 5px;
+	left: -1px;
+}
+
+.contact-phone .icon {
+	top: -14px;
+	left: -18px;
+}
+.contact-info .inner {
+	color: @highlight2;
+	font-family: @font1;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 25px;
+
+	display: block;
+	margin-left: 29px;
+}
+
+
+/*********************
+ *
+ * SUBFOOTER
+ *
+ ********************/
+.subfooter {
+	margin-top: 30px;
+	width: 100%;
+	background-color: @white;
+
+	-webkit-box-shadow: 0px 0px 50px 0 rgba(0, 0, 0, 0.07);
+	box-shadow:         0px 0px 50px 0 rgba(0, 0, 0, 0.07);
+}
+.third-line {
+	height: 100%;
+	padding: 30px 120px 0;
+	overflow: hidden;
+}
+
+.subfooter .column {
+	height: 120px;
+	border-left: 1px solid @lightgrey;
+	padding: 0 0 0 19px;
+}
+
+/*********************
+ *
+ * SUBFOOTER - SITE TITLE
+ *
+ ********************/
+#footer .site-title {
+	padding: 15px 0 0;
+	height: 70px;
+}
+//#footer .site-title ul {
+//	display: block;
+//	list-style: none;
+//	width: 320px;
+//}
+#footer .site-title .subtitle-part {
+	display: block;
+	float: left;
+//	margin: 0 8px 0 7px;
+}
+#footer .site-title .subtitle-part:before {
+	content: '\2022';
+	margin: 0 8px 0 7px;
+	font-family: sans-serif;
+}
+#footer .site-title .subtitle-part:first-child:before {
+	display: none;
+}
+
+#footer .site-title > .inner .icon {
+	position: absolute;
+	top: 5px;
+	left: 0;
+
+	width: 50px;
+	height: 50px;
+}
+#footer .site-title > .inner .subtitle,
+#footer .site-title > .inner .title {
+	width: auto;
+	margin: 0;
+	text-align: left;
+//	margin-left: 75px;
+
+	margin-left: 55px;
+}
+#footer .site-title > .inner .title {
+	font-size: 28px;
+}
+#footer .site-title > .inner .subtitle {
+//	margin-top: -3px;
+
+	font-size: 12px;
+	letter-spacing: normal;
+	margin-top: -13px;
+}
+
+
+/*********************
+ *
+ * SUBFOOTER - NEWSLETTER
+ *
+ ********************/
+.newsletter h4 {
+	margin: 4px 0 6px;
+}
+.newsletter .newsletter-email {
+	font-family: @font1;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 20px;
+	padding: 2px 11px 0;
+	color: @black;
+
+	display: block;
+	width: 230px;
+	max-width: 100%;
+	height: 30px;
+	background-color: @white;
+	border: 1px solid @lightgrey;
+	border-radius: 0;
+	margin-right: -1px;
+
+	float: left;
+}
+.newsletter .newsletter-email:focus,
+.newsletter .newsletter-email:active,
+.newsletter .newsletter-email:hover {
+	border: 1px solid #AAA;
+}
+
+.newsletter .loading .newsletter-email {
+	opacity: 0.5;
+}
+.newsletter .loading .newsletter-email:focus,
+.newsletter .loading .newsletter-email:active,
+.newsletter .loading .newsletter-email:hover {
+	border: 1px solid @lightgrey;
+}
+
+
+.newsletter .newsletter-button {
+	position: relative;
+	font-family: @font1;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	color: @white;
+	text-align: center;
+	padding: 1px 14px 0 15px;
+
+	display: block;
+	height: 30px;
+	background-color: @highlight;
+
+	cursor: pointer;
+
+	float: left;
+
+	-webkit-transition: background-color 0.3s ease-out;
+	transition: background-color 0.3s ease-out;
+
+}
+.newsletter .newsletter-button:hover {
+	background-color: @black;
+}
+
+.newsletter .loading .newsletter-button {
+	background-color: @black;
+	color: @black;
+	cursor: default;
+}
+.newsletter .newsletter-button .extra-loader .part {
+	background-color: @white;
+}
+
+
+/*********************
+ *
+ * SUBFOOTER - SOCIAL NETWORK
+ *
+ ********************/
+.social-network h4 {
+	margin: 4px 0 0;
+}
+.social-network ul {
+	list-style: none;
+	display: block;
+	margin-left: -20px;
+	margin-top: -5px;
+	width: 250px;
+}
+.social-network li {
+	display: block;
+	width: 50px;
+	height: 50px;
+
+	float: left;
+}
+.social-network a,
+.social-network .icon {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.social-network .icon {
+	fill: @lightgrey;
+
+	-webkit-transition: fill 0.3s ease-out;
+	transition: fill 0.3s ease-out;
+}
+.social-network .twitter .icon {
+	width: 24px;
+	height: 24px;
+	position: relative;
+	top: 13px;
+	left: 13px;
+}
+.social-network .facebook .icon {
+	width: 22px;
+	height: 22px;
+	position: relative;
+	top: 14px;
+	left: 14px;
+}
+.social-network .instagram .icon {
+  width: 22px;
+  height: 22px;
+  position: relative;
+  top: 14px;
+  left: 14px;
+}
+
+.social-network a:hover .icon {
+	fill: @highlight;
+}
+
+/*********************
+ *
+ * EASY CLEARING
+ *
+ ********************/
+.newsletter:after,
+.subfooter-wrapper:after,
+.second-line:after,
+.contact-info:after,
+.first-line:after,
+#footer .footer-links:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/*********************
+ *
+ * SMALL DESKTOP
+ *
+ ********************/
+@media only screen and (max-width: 1740px) {
+	.footer-wrapper {
+		padding: 120px 60px 0;
+	}
+
+	.contact-info .inner,
+	.contact-content,
+	.second-line li > a {
+		font-size: 14px;
+	}
+
+	.third-line {
+		padding: 30px 60px 0;
+	}
+	.subfooter .column.newsletter {
+		padding-right: 20px;
+	}
+}
+
+@media only screen and (max-width: 1700px) {
+	#footer .site-title .subtitle-part.optionnal {
+		display: none;
+	}
+	#footer .site-title > .inner .subtitle {
+		font-size: 12px;
+		letter-spacing: 5.7px;
+		margin-top: -13px;
+	}
+}
+
+@media only screen and (max-width: 1620px) {
+	#footer h4 {
+		font-size: 16px;
+	}
+
+	.value {
+		padding-left: 44px;
+	}
+
+	.newsletter input {
+		width: 190px;
+		font-size: 14px;
+	}
+	.newsletter button {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+	.value {
+		padding-top: 14px;
+	}
+	.value .text {
+		white-space: normal;
+		width: 110px;
+	}
+	.value .icon {
+		top: -14px;
+	}
+
+	.contact-info .icon {
+		display: none;
+	}
+	.contact-info .inner {
+		margin-left: 0;
+	}
+
+	// LOGO FOOTER
+//	#footer .site-title > .inner .icon {
+//		width: 50px;
+//		height: 50px;
+//	}
+//
+//	#footer .site-title > .inner .subtitle,
+//	#footer .site-title > .inner .title {
+//		margin-left: 55px;
+//	}
+//	#footer .site-title > .inner .title {
+//		font-size: 28px;
+//	}
+//	#footer .site-title > .inner .subtitle {
+//		font-size: 12px;
+//		letter-spacing: 5.7px;
+//		margin-top: -13px;
+//	}
+}
+
+
+/*********************
+ *
+ * TABLET AND LESS
+ *
+ ********************/
+@media only screen and (max-width: 1024px) {
+
+}
+
+/*********************
+ *
+ * LANDSCAPE PHONE
+ *
+ ********************/
+@media only screen and (max-width: 690px) {
+	.footer-wrapper {
+		padding: 120px 30px 0;
+	}
+
+	.first-line,
+	.first-line .column,
+	.second-line .column{
+		margin-bottom: 30px;
+	}
+	.column.column-four {
+		width: 54%;
+	}
+	.column.column-four.column-last,
+	.first-line .column.column-four:nth-child(2n) {
+		width: 46%;
+	}
+	.column.column-six {
+		width: 33%;
+	}
+
+	.contact-content {
+		min-width: 0;
+	}
+
+	.subfooter {
+		margin-top: 0;
+	}
+	.third-line {
+		padding: 30px 30px 0;
+	}
+	.column.column-three {
+		width: 100%;
+		margin-bottom: 15px;
+		height: auto;
+	}
+	.column.column-three.column-last {
+		margin-bottom: 0;
+	}
+	#footer .site-title {
+		padding-top: 0;
+		height: 60px;
+	}
+}
+
+/*********************
+ *
+ * PORTRAIT PHONE
+ *
+ ********************/
+@media only screen and (max-width: 440px) {
+	.line.second-line .column {
+		width: 54%;
+		min-height: 0;
+	}
+	.line.second-line .column:nth-child(2n) {
+		width: 46%;
+	}
+	.line.second-line .column.column-last {
+		width: 100%;
+	}
+
+	.second-line li {
+		line-height: 15px;
+		margin-bottom: 5px;
+	}
+	.second-line li > a {
+		line-height: 15px;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	.line .column {
+		width: 100% !important;
+		min-height: 0;
+	}
+}

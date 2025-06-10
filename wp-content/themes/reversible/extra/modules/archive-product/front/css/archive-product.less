@@ -1,0 +1,367 @@
+.main-wrapper {
+	padding-top: 40px;
+}
+/*********************
+ *
+ * MENU IS NOT FIXED IN SHOP PAGE
+ *
+ ********************/
+.post-type-archive-product #header > .wrapper {
+	width: auto;
+	position: static;
+	-webkit-transform: none;
+	transform: none;
+}
+
+/*********************
+ *
+ * PRODUCT
+ *
+ ********************/
+.products {
+	margin:  0 -30px 95px;
+	padding: 0 120px;
+}
+
+.products .product {
+	margin: 30px 0;
+	height: 300px;
+	width: 25%;
+	min-width: 300px;
+}
+
+.js .products .product {
+	opacity: 0;
+}
+
+.js.products-initialized .products .product {
+	opacity: 1;
+}
+
+.products .product-link {
+	width: 300px;
+	margin: 0 auto;
+}
+
+.products .product-link:after {
+	content:            '';
+	display:            block;
+	height:             1px;
+	background-color:   @lightgrey;
+
+	position:           absolute;
+	left:               50%;
+	bottom:             -1px;
+
+	width:              150px;
+	margin-left:        -75px;
+	opacity:            0;
+
+	-webkit-transition: all 0.5s ease-out;
+	transition:         all 0.5s ease-out;
+
+}
+
+.products .instock .product-link:hover:after {
+	width:       300px;
+	margin-left: -150px;
+	opacity:     1;
+}
+
+/*********************
+ *
+ * PRODUCT HEADER
+ *
+ ********************/
+.products-header {
+	position: relative;
+	display:  block;
+	width:    100%;
+	height:   210px;
+	padding:  140px 0 30px;
+}
+
+/*********************
+ *
+ * SORTING
+ *
+ ********************/
+.product-sorts-wrapper {
+	margin:   0;
+	padding:  0 120px;
+	width:    100%;
+	height:   40px;
+	position: relative;
+}
+
+.product-sorts {
+	position: relative;
+	display:  block;
+	width:    100%;
+	height:   100%;
+	padding:  0 5px;
+}
+
+.js .product-sorts {
+	visibility: hidden;
+}
+
+.js.products-initialized .product-sorts {
+	visibility: visible;
+}
+
+.product-sorts:before {
+	content:          '';
+	display:          block;
+	width:            100%;
+	height:           1px;
+	background-color: @lightgrey;
+	position:         absolute;
+	bottom:           -1px;
+	left:             0;
+}
+
+.product-sorts,
+.product-sorts * {
+	font-family: @font1;
+	font-weight: 400;
+	font-size:   14px;
+	line-height: 42px;
+}
+
+.product-sorts > span:first-child {
+	display: inline-block;
+	height:  100%;
+	margin:  0 2px 0 0;
+}
+
+.product-sort {
+	position: relative;
+	display:  inline-block;
+	height:   100%;
+}
+
+.product-sort:after {
+	content: '\2022';
+	color:   @lightgrey;
+	display: inline-block;
+	margin:  0 -2px 0 -1px;
+}
+
+.product-sort.highest-first-sort:after {
+	display: none;
+}
+
+.product-sort-link {
+	padding:  0 5px 0 6px;
+	position: relative;
+	display:  inline-block;
+	height:   100%;
+	color:    @black;
+}
+
+.js .product-sort-link.active,
+.no-touch .product-sort-link:hover,
+.touch .product-sort-link:active {
+	color: @highlight2;
+}
+
+.product-sort-link:before {
+	content:          '';
+	display:          block;
+	position:         absolute;
+	left:             0;
+	bottom:           -1px;
+	width:            100%;
+	height:           1px;
+	background-color: @highlight;
+	opacity:          0;
+}
+
+//.product-sort-link:hover:before,
+.js .product-sort-link.active:before {
+	opacity: 1;
+}
+
+/*********************
+ *
+ * COUNTING
+ *
+ ********************/
+.extra-result-count {
+	display: inline-block;
+	height:  100%;
+	float:   right;
+}
+
+.extra-result-count .count {
+	font-weight: 600;
+	font-size:   16px;
+}
+
+
+/*********************
+ *
+ * TOTOP
+ *
+ ********************/
+//.custom-totop-wrapper {
+//	background-color: red;
+//}
+.custom-totop-wrapper.follow {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 50px;
+}
+.custom-totop-wrapper.follow .custom-totop-inner {
+	position: fixed;
+	bottom: 60px;
+	left: 0;
+	width: 100%;
+	padding-left: 300px;
+	pointer-events: none;
+}
+.custom-totop-wrapper.follow .custom-totop-inner .custom-totop {
+	pointer-events: all;
+}
+
+.custom-totop {
+	margin-top: 0;
+}
+
+/*********************
+ *
+ * NO GO TO SHOP
+ *
+ ********************/
+.post-type-archive-product .go-to-shop {
+	display: none;
+}
+
+/*********************
+ *
+ * EASY CLEARING
+ *
+ ********************/
+.products:after {
+	content:    ".";
+	display:    block;
+	height:     0;
+	clear:      both;
+	visibility: hidden;
+}
+
+/*********************
+ *
+ * SMALL DESKTOP
+ *
+ ********************/
+@media only screen and (max-width: 1740px) {
+	.products {
+		padding: 0 60px;
+	}
+
+	.product-sorts-wrapper {
+		padding: 0 60px;
+	}
+}
+
+@media only screen and (max-width: 1620px) {
+	.products .product {
+		width: 33%;
+	}
+}
+@media only screen and (max-width: 1330px) {
+	.products .product {
+		width: 50%;
+	}
+}
+
+/*********************
+ *
+ * TABLETTE AND LESS
+ *
+ ********************/
+@media only screen and (max-width: 1024px) {
+	.products {
+		padding: 0 25px;
+	}
+
+	.products .product {
+		width: 33%;
+	}
+
+	.custom-totop-wrapper.follow .custom-totop-inner {
+		padding-left: 0;
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	.products {
+		padding: 0;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.products .product {
+		width: 50%;
+	}
+}
+
+/*********************
+ *
+ * LANDSCAPE PHONE
+ *
+ ********************/
+@media only screen and (max-width: 690px) {
+	.main-wrapper {
+		padding-top: 0;
+	}
+
+	.product-sorts-wrapper {
+		padding: 0 30px;
+	}
+
+	.products {
+		padding: 0;
+	}
+
+	.products-header {
+		padding-top: 30px;
+	}
+}
+
+@media only screen and (max-width: 620px) {
+	.main-wrapper {
+		padding-top: 0;
+	}
+
+	.product-sorts-wrapper,
+	.products-header {
+		height: auto;
+	}
+
+	// SORT BUTTONS
+	.product-sort {
+		display: block;
+		height: 35px;
+	}
+	.product-sort:after,
+	.product-sorts:before {
+		display: none;
+	}
+	.product-sort-link {
+		padding: 0;
+	}
+
+	.extra-result-count {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	.products .product {
+		width: 100%;
+		max-width: 100%;
+	}
+}

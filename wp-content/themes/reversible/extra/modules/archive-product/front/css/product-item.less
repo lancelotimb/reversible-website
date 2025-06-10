@@ -1,0 +1,127 @@
+li.product {
+	position:      relative;
+	list-style: none;
+	display: block;
+	float: left;
+	text-align: center;
+}
+li.product:before {
+	display: none;
+}
+
+.extra-product-thumbnail {
+	height: 100%;
+	width:  100%;
+	display: none;
+}
+.no-js .extra-product-thumbnail.no-js {
+	display: block;
+}
+.js .extra-product-thumbnail.js {
+	display: block;
+	opacity: 0;
+}
+
+.product-link {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.product-inner {
+	display:       block;
+	position:      absolute;
+	left:          0;
+	bottom:        0;
+	text-align:    center;
+	width:         100%;
+	margin-bottom: 3px;
+}
+
+.product-title {
+	display:     inline-block;
+	font-family: @font1;
+	font-weight: 600;
+	font-size:   14px;
+	line-height: 20px;
+	vertical-align: top;
+
+	-webkit-transition: color 0.3s ease-out;
+	transition: color 0.3s ease-out;
+}
+
+.product-title:after {
+	content: '\2022';
+	color:   @lightgrey;
+	display: inline-block;
+	margin:  0 3px 0 7px;
+}
+
+.instock .product-link:hover,
+.instock .product-link:hover .product-title {
+	color: @highlight2;
+}
+
+.price {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+}
+.price .price-outofstock {
+	text-transform: uppercase;
+}
+
+.price del {
+	position: relative;
+	top: 0;
+
+	-webkit-transition: top 0.3s ease-out;
+	transition: top 0.3s ease-out;
+}
+
+.price ins {
+	text-decoration: none;
+	position: absolute;
+	display: block;
+	top: -20px;
+	left: 0;
+
+	-webkit-transition: top 0.3s ease-out;
+	transition: top 0.3s ease-out;
+}
+
+.instock .product-link:hover .price del {
+	top: 20px;
+}
+
+.instock .product-link:hover .price ins {
+	top: 0;
+}
+
+.product .onsale {
+	display: block;
+	position: absolute;
+	top: 60px;
+	right: 60px;
+	width: 45px;
+	height: 45px;
+	border-radius: 22px;
+	background-color: @highlight;
+	text-align: center;
+
+	color: @white;
+	font-family: @font1;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 45px;
+
+	z-index: 1;
+}
+
+.outofstock.product .onsale {
+	display: none;
+}
+.outofstock .product-thumbnail-wrapper {
+	opacity: 0.5;
+}

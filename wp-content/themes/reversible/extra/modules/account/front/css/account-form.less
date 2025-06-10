@@ -1,0 +1,75 @@
+/*********************
+ *
+ *
+ * ACCOUNT COLUMNS
+ *
+ *
+ ********************/
+.account-columns {
+	width: 100%;
+}
+.account-column {
+	width: 360px;
+	float: left;
+}
+.account-column-1 {
+	margin-right: 60px;
+}
+
+/*********************
+ *
+ *
+ * ACCOUNT FORM
+ *
+ *
+ ********************/
+.account-form {
+	width: 360px;
+	max-width: 100%;
+}
+
+.change-password-bloc em {
+	font-size: 14px;
+}
+
+.extra-radio, .extra-checkbox {
+	margin-left: -7px;
+}
+
+
+/*********************
+ *
+ *
+ * EASY CLEARING
+ *
+ *
+ ********************/
+.account-columns:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+@media only screen and (max-width: 1180px) {
+	.account-column-1 {
+		margin-right: 10px;
+	}
+}
+
+@media only screen and (max-width: 780px) {
+	.account-form {
+		margin: 0 auto;
+	}
+
+	.account-column-1 {
+		margin-right: 0;
+	}
+	.account-column {
+		float: none;
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
